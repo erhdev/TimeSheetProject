@@ -13,7 +13,7 @@ h1 {
 
 }
 
-.tableH {
+table, th, tr{
     width: 80%;
 }
 
@@ -22,8 +22,7 @@ font-size: 3em;
 text-align: center;
 }
 
-.Form {
-    background-color: rgb(224, 224, 179);
+.Form {    background-color: rgb(224, 224, 179);
 }
 
 .Table {
