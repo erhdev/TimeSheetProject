@@ -20,9 +20,38 @@ $('#submitButton').on('click', function(){
     newRow.append(startDate);
     newRow.append(salary);
 
+    database.ref().push({
+        Name: employeeName,
+        Role: employeeRole,
+        Salary: employeeSalary,
+        Date: employeeDate
+    });
+
     $('#table').append(newRow);
     $('#employeeName').val('');
-    $('#employeeRole').val('');
+    $('employeeRole').val('');
     $('#employeeSalary').val('');
     $('#employeeDate').val('');
 })
+
+// Adding the firebase config
+var config = {
+    apiKey: "AIzaSyBbV6J7yzzpFINlBlmMvMZBFJo7YwqDxEg",
+    authDomain: "timesheetproject-c7cf3.firebaseapp.com",
+    databaseURL: "https://timesheetproject-c7cf3.firebaseio.com",
+    projectId: "timesheetproject-c7cf3",
+    storageBucket: "timesheetproject-c7cf3.appspot.com",
+    messagingSenderId: "552631608999"
+  };
+  firebase.initializeApp(config);
+
+  var database = firebase.database();
+
+ 
+
+  database.ref().on('child_added', function(snapshot) {
+      nameCell = database.Name;
+      roleCell = database.Role;
+      salary = database.Salary;
+      startDate = database.Date;
+  });
