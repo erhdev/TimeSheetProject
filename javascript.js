@@ -1,8 +1,8 @@
-$('').on('click', function(){
-    var employeeName = $('').val();
-    var employeeRole = $('').val();
-    var employeeSalary = $('').val()
-    var employeeDate = $('').val();
+$('#submitButton').on('click', function(){
+    var employeeName = $('#employeeName').val();
+    var employeeRole = $('#employeeRole').val();
+    var employeeSalary = $('#employeeSalary').val()
+    var employeeDate = $('#employeeDate').val();
    
     var newRow = $('<tr>');
     var nameCell = $('<td>');
@@ -21,9 +21,9 @@ $('').on('click', function(){
     newRow.appendChild(salary);
 
     $('').appendChild(newRow);
-    $('').text('');
-    $('').text('');
-    $('').text('');
-    $('').text('');
+    $('#employeeName').text('');
+    $('employeeRole').text('');
+    $('#employeeSalary').text('');
+    $('#employeeDate').text('');
 })
-setInterval()
+setInterval();
