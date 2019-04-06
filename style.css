@@ -1,0 +1,32 @@
+h1 {
+    font-family: 'Anton', sans-serif;
+    position: relative;
+    text-align: center;
+    padding-top: 75px;    
+    font-size: 5em;
+
+}
+
+.container {
+ background-color: rgb(145, 145, 224);
+ margin-top: 20px; 
+
+}
+
+.tableH {
+    width: 80%;
+}
+
+h2 {
+font-size: 3em;
+text-align: center;
+}
+
+.Form {
+    background-color: rgb(224, 224, 179);
+}
+
+.Table {
+background-color: antiquewhite;
+
+}

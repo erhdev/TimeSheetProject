@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <!--font-family: 'Anton', sans-serif;-->
+    <title>Time Sheet</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="Header"> Time Sheet</h1>
+        <h2>Employee Monthly Time</h2>
+
+        <br><br>
+
+    </div>
+    <form class="employeeInfo container Form">
+        <label>Employee Name </label><br>
+        <input type="text" name="Employee Name" id="employeeName" class = "tableH"><br><br>
+        <label>Role </label><br>
+        <input type="text" name="Position" id="employeeRole" class = "tableH"><br><br>
+        <label>Date Started</label><br>
+        <input type="date" name="Start Date" id="employeeDate" class = "tableH"><br><br>
+        <label>Monthly Salary</label><br>
+        <input type="number" name="Emplotee income" id="employeeSalary" class = "tableH"><br><br>
+        <br><br>
+        <div class="button">
+            <button type="submit" form="form1" value="Submit" id="submitButton">Submit</button>
+        </div>
+
+
+    </form>
+    <table class="container Table">
+        <tr>
+            <th class="tHeader"> employee Name</th>
+
+            <th class="tHeader"> Role </th>
+            <th class="tHeader">Date Started</th>
+            <th class="tHeader">Months Employed</th>
+            <th class="tHeader">Monthly Salary</th>
+            <th class="tHeader">Total Income</th>
+
+        </tr>
+
+    </table>
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+    <script src='javascript.js'></script>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
